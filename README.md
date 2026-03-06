@@ -24,11 +24,25 @@ Este plugin añade una nueva pestaña en `Configuración > General` dentro de tu
 *   Librería Gráfica: `qrcode.js`.
 *   Requisitos: GLPI >= 10.0.0.
 
-## 📥 Instalación
+## 📥 Instalación (How To)
 
-1. Descarga el repositorio o la carpeta `inventoryqr`.
-2. Sube la carpeta al directorio `plugins/` de tu instalación de GLPI (Ej: `/var/www/html/glpi/plugins/inventoryqr`).
-3. Inicia sesión en GLPI con una cuenta de *Super-Admin*.
+Existen dos formas de llevar este plugin a tu servidor GLPI:
+
+**Opción A: Usando Git (Recomendado)**
+Accede por terminal a la carpeta de plugins de tu servidor GLPI y clona este repositorio directamente:
+```bash
+cd /var/www/html/glpi/plugins/
+git clone https://github.com/oxoempire/GLPI-Androir-QR.git inventoryqr
+```
+*(Asegúrate de cambiar `/var/www/html/glpi/plugins/` por la ruta real de tu servidor)*.
+
+**Opción B: Descarga Manual**
+1. Descarga el repositorio en formato `.zip` desde GitHub.
+2. Descomprímelo y renombra la carpeta resultante a `inventoryqr`.
+3. Sube la carpeta al directorio `plugins/` de tu instalación de GLPI (Ej: `/var/www/html/glpi/plugins/inventoryqr`).
+
+**Activación en GLPI:**
+1. Inicia sesión en GLPI con una cuenta de *Super-Admin*.
 4. Dirígete a **Configuración** > **Complementos** (o *Plugins*).
 5. Verás en la lista el plugin **Android Inventory QR**, haz clic sobre el ícono de la carpeta gris para **Instalarlo**.
 6. Haz clic en el círculo verde/rojo para **Activarlo**.
